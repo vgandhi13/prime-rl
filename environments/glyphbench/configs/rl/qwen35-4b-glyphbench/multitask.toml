@@ -126,7 +126,7 @@ temperature = 1.0
 [[orchestrator.train.source]]
 name = "train-craftax100"
 env.taskset.id = "glyphbench"
-env.taskset.task_file = "configs/rl/qwen35-4b-glyphbench/multitask_craftax100_tasks.txt"
+env.taskset.task_file = "environments/glyphbench/configs/rl/qwen35-4b-glyphbench/multitask_craftax100_tasks.txt"
 env.taskset.seed = 42
 env.taskset.num_seeds = 512
 env.taskset.mixed_seeds = true
@@ -160,7 +160,7 @@ top_p = 1.0
 [[orchestrator.eval.source]]
 name = "eval-fixed-panel"
 env.taskset.id = "glyphbench"
-env.taskset.task_file = "configs/rl/qwen35-4b-glyphbench/multitask_fixed_eval_tasks.txt"
+env.taskset.task_file = "environments/glyphbench/configs/rl/qwen35-4b-glyphbench/multitask_fixed_eval_tasks.txt"
 env.taskset.seed = 1000000
 env.taskset.num_seeds = 4
 env.taskset.mixed_seeds = false
